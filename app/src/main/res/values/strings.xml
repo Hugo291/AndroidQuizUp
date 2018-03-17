@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ClassroomCommunity</string>
+    <string name="identifiant">Username</string>
+    <string name="mot_de_passe">Password</string>
+    <string name="connexion">Login</string>
+    <string name="icone_cadena">icone cadena</string>
+
+    <string name="close">close</string>
+    <string name="open">open</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wifi">Wifi</string>
+    <string name="infrarouge">Infrarouge</string>
+    <string name="rien">RIEN</string>
+    <string name="autre">AUTRE</string>
+
+    <string name="player1">Arthur</string>
+    <string name="player2">Robert</string>
+    <string name="question">Quelle est la technilogie qui permet de se connecter a un reseau sans fil?</string>
+    <string name="CONTINUER">Continuer</string>
+    <string name="RESTER">Rester</string>
+    <string name="dialogContinuer">Etes-vous sûr de vouloir continuer ?</string>
+</resources>

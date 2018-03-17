@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_presence"
+        android:icon="@drawable/ic_account_circle"
+        android:title="Presence" />
+    <item
+        android:id="@+id/nav_friends"
+        android:icon="@drawable/ic_group"
+        android:title="Mes amis" />
+    <item
+        android:id="@+id/nav_param"
+        android:icon="@drawable/ic_keyboard"
+        android:title="Paramètre" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_help"
+        android:title="A propos" />
+    <item
+        android:id="@+id/nav_cam"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera" />
+    <item
+        android:id="@+id/nav_request"
+        android:icon="@drawable/ic_assignment"
+        android:title="Demande" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_block"
+        android:title="Se déconnecter" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">ClassroomCommunity</string>
+<string name="identifiant">Identifiant</string>
+<string name="mot_de_passe">Mot de passe</string>
+<string name="connexion">Connexion</string>
+    <string name="CONTINUER">Continuer</string>
+    <string name="RESTER">Rster</string>
+    <string name="dialogContinuer">Etes-vous sûr de vouloir continuer ?</string>
+</resources>

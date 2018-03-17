@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <LinearLayout
+        android:id="@+id/block1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/friend_asker"
+            android:layout_weight=".4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_weight=".2"
+            android:padding="15dp"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/boxing" />
+
+        <TextView
+            android:id="@+id/friend_target"
+            android:textSize="20dp"
+            android:layout_weight=".4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/block1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_height="70dp">
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_positive"
+            android:layout_weight=".5"
+            android:text="Accepter"
+            android:background="@color/valid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_negative"
+            android:layout_weight=".5"
+            android:text="refuser"
+            android:background="@color/error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

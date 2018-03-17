@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paci.iut.classroomcommunity.Activity.QuizzActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/answer3"
+            android:layout_weight=".5"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="@string/infrarouge" />
+
+        <Button
+            android:layout_weight=".5"
+            android:id="@+id/answer4"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="@string/wifi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_above="@id/linearlayout"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:id="@+id/answer1"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="@string/autre" />
+
+        <Button
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:id="@+id/answer2"
+            android:layout_height="wrap_content"
+            android:height="60dp"
+            android:text="@string/rien" />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/image_me"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/progressBar3"
+        android:src="@drawable/player1" />
+
+    <ImageView
+        android:id="@+id/image_adv"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/progressBar3"
+        android:src="@drawable/player2" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar3"
+        android:layout_centerHorizontal="true"
+        android:text="50"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:text="3"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/nom1"
+        android:layout_toRightOf="@id/image_me"
+        android:textColor="@color/score"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom2"
+        android:layout_toStartOf="@+id/image_adv"
+        android:textColor="@color/score"
+        android:text="2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/nom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar3"
+        android:layout_toLeftOf="@id/image_adv"
+        android:text="@string/player1"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/nom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar3"
+        android:layout_toRightOf="@id/image_me"
+        android:text="@string/player2"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_me"
+        android:layout_above="@id/linearlayout2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Quelle est technilogie permet de se connecter a un reseau sans fil?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

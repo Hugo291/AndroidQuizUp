@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="paci.iut.classroomcommunity.Activity.QuizzActivity">
+
+    <Button
+        android:id="@+id/answer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:height="60dp"
+        android:layout_margin="5dp"
+
+        android:text="Reponse4" />
+
+    <Button
+        android:id="@+id/answer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer4"
+        android:height="60dp"
+        android:layout_margin="5dp"
+
+        android:text="Reponse 3" />
+
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer3"
+        android:height="60dp"
+        android:layout_margin="5dp"
+
+        android:text="Reponse 2" />
+
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:layout_margin="5dp"
+        android:layout_above="@id/answer2"
+        android:text="Reponse 1" />
+
+    <ImageView
+        android:id="@+id/image_me"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:layout_below="@id/progressBartemp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+
+
+    <ImageView
+        android:id="@+id/image_adv"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="@dimen/img_width"
+        android:layout_height="@dimen/img_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/progressBartemp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBartemp"
+        android:layout_centerHorizontal="true"
+        android:text="temps"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/score1"
+        android:text="score1"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/nom1"
+        android:layout_toEndOf="@id/image_me"
+        android:textColor="@color/score"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/score2"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom2"
+        android:layout_toStartOf="@+id/image_adv"
+        android:textColor="@color/score"
+        android:text="score2" />
+
+    <ProgressBar
+        android:id="@+id/progressBartemp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/nom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBartemp"
+        android:layout_toLeftOf="@id/image_adv"
+        android:text="Nom2"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/nom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBartemp"
+        android:layout_toRightOf="@id/image_me"
+        android:text="Nom1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/answer1"
+        android:layout_below="@id/image_me"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Question"
+        android:layout_margin="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
