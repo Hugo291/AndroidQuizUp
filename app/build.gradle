@@ -30,7 +30,7 @@ dependencies {
     //Ion
     compile 'com.koushikdutta.ion:ion:2.1.9'
     //qrcode
-    compile 'me.dm7.barcodescanner:zbar:1.9'
+    compile 'me.dm7.barcodescanner:zbar:1.9.13'
 
     implementation 'com.android.support:design:26.1.0'
     //gson
