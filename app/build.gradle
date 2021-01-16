@@ -28,7 +28,7 @@ dependencies {
     //Circle Image
     compile 'de.hdodenhof:circleimageview:2.0.0'
     //Ion
-    compile 'com.koushikdutta.ion:ion:2.1.9'
+    compile 'com.koushikdutta.ion:ion:3.1.0'
     //qrcode
     compile 'me.dm7.barcodescanner:zbar:1.9'
 
